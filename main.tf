@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 terraform {
-  required_version = "~> 1.0.10"
+  required_version = "~> 1.5.2"
   backend "s3" {
     # your own s3 bucket
     bucket = "data-lake-fsi-demo"

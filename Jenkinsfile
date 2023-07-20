@@ -4,7 +4,7 @@ pipeline {
     skipDefaultCheckout(true)
   }
   tools {
-    terraform "terraform-1.0.10"
+    terraform "terraform-1.5.2"
   }
   stages{
     stage("clean workspace") {

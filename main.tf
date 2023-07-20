@@ -4,12 +4,6 @@ provider "aws" {
 
 terraform {
   required_version = "~> 1.5.2"
-  backend "s3" {
-    # your own s3 bucket
-    bucket = "data-lake-fsi-demo"
-    region = "ap-northeast-1"
-    key    = "terraform.tfstate"
-  }
   required_providers {
     aws = {
       source  = "hashicorp/aws"
